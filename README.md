@@ -13,14 +13,8 @@ A daily habit tracker with a weekly grid view, streak counters, and full persist
 ### Steps (fresh machine)
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/habit-tracker.git
 cd habit-tracker
-
-# 2. Install dependencies
 npm install
-
-# 3. Start the dev server
 npm run dev
 ```
 
@@ -35,7 +29,7 @@ npm run preview
 ---
 
 ## 🌐 Deployed URL
-[https://YOUR-APP.vercel.app](https://YOUR-APP.vercel.app) *(update after deploying)*
+No deployed URL included in this submission.
 
 ---
 

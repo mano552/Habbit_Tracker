@@ -7,14 +7,14 @@
 **Requirements:** Node.js 18+ and npm.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/habit-tracker.git
 cd habit-tracker
 npm install
 npm run dev
-# Open http://localhost:5173
 ```
 
-**Deployed URL:** https://YOUR-APP.vercel.app *(update after deploy)*
+Open **http://localhost:5173** in your browser.
+
+**Deployed URL:** not deployed yet.
 
 No environment variables, no backend. All data lives in `localStorage`.
 
