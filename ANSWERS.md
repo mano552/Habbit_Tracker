@@ -14,7 +14,7 @@ npm run dev
 
 Open **http://localhost:5173** in your browser.
 
-**Deployed URL:** not deployed yet.
+**Deployed URL:** https://habit-tracker-streak.netlify.app/
 
 No environment variables, no backend. All data lives in `localStorage`.
 

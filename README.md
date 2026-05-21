@@ -29,7 +29,7 @@ npm run preview
 ---
 
 ## 🌐 Deployed URL
-No deployed URL included in this submission.
+https://habit-tracker-streak.netlify.app/
 
 ---
 

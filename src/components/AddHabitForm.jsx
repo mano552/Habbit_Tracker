@@ -38,14 +38,6 @@ const AddHabitForm = forwardRef(function AddHabitForm({ onAdd }, ref) {
         >
           <span aria-hidden="true">+</span>
         </button>
-        <button
-          type="button"
-          className="browse-btn"
-          onClick={() => inputRef.current?.focus()}
-          aria-label="Browse habits"
-        >
-          Browse
-        </button>
       </div>
     </form>
   )

@@ -147,23 +147,6 @@ svg    { display: block; }
 .add-btn:active:not(:disabled) { transform: scale(0.96); }
 .add-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
-.browse-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 96px;
-  padding: 14px 18px;
-  background: #ffffff;
-  color: var(--text);
-  border: 1px solid rgba(60,157,163,0.18);
-  border-radius: 16px;
-  font-weight: 600;
-  font-family: var(--font-mono);
-  transition: background 0.15s, border-color 0.15s, transform 0.1s;
-}
-.browse-btn:hover { background: #f3fafa; border-color: rgba(60,157,163,0.25); }
-.browse-btn:active { transform: scale(0.98); }
-
 /* ─── Tracker Section ─────────────────────────────────── */
 .tracker-section {
   background: var(--surface);
