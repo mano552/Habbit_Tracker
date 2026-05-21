@@ -29,15 +29,22 @@ export default function App() {
   }, [])
   const handleToday = useCallback(() => setCurrentWeek(new Date()), [])
 
+  const today = new Date()
+  const completedToday = habits.filter((habit) => isChecked(habit.id, today)).length
+  const totalStreaks = habits.reduce(
+    (sum, habit) => sum + computeStreak(getHabitCheckmarks(habit.id)),
+    0
+  )
+
   return (
     <div className="app">
       <header className="app-header">
         <div className="header-inner">
           <div className="logo">
             <span className="logo-icon" aria-hidden="true">◆</span>
-            <span className="logo-text">Streaks</span>
+            <span className="logo-text">Daily Habits</span>
           </div>
-          <p className="tagline">Daily habits. Weekly view. Real momentum.</p>
+          <p className="tagline">Track your week at a glance with habits that stick.</p>
         </div>
       </header>
 
@@ -67,6 +74,19 @@ export default function App() {
             />
           )}
         </div>
+
+        {habits.length > 0 && (
+          <section className="progress-summary">
+            <div className="summary-card">
+              <p className="summary-label">Completed Today</p>
+              <p className="summary-value">{completedToday}/{habits.length}</p>
+            </div>
+            <div className="summary-card">
+              <p className="summary-label">Total Streaks</p>
+              <p className="summary-value">{totalStreaks}</p>
+            </div>
+          </section>
+        )}
       </main>
 
       <footer className="app-footer">

@@ -5,6 +5,7 @@ import {
   format,
   addWeeks,
   subWeeks,
+  subDays,
   isToday,
   isFuture,
   parseISO,
@@ -35,23 +36,19 @@ export const formatMonthYear = (date) => format(date, 'MMMM yyyy')
 // If today is unchecked, streak still counts up to yesterday (forgiving mode)
 export const computeStreak = (checkmarks) => {
   let streak = 0
-  let cursor = new Date()
+  let cursor = startOfDay(new Date())
 
-  // Start from today, walk backwards
-  for (let i = 0; i < 365; i++) {
-    const key = toKey(cursor)
-    if (checkmarks[key]) {
-      streak++
-      cursor = new Date(cursor.getTime() - 86400000)
-    } else {
-      // Allow one miss only if it's today (forgiving mode)
-      if (i === 0) {
-        cursor = new Date(cursor.getTime() - 86400000)
-        continue
-      }
-      break
-    }
+  if (!checkmarks[toKey(cursor)]) {
+    cursor = subDays(cursor, 1)
   }
+
+  while (streak < 365) {
+    const key = toKey(cursor)
+    if (!checkmarks[key]) break
+    streak++
+    cursor = subDays(cursor, 1)
+  }
+
   return streak
 }
 

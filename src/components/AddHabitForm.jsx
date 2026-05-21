@@ -29,15 +29,24 @@ const AddHabitForm = forwardRef(function AddHabitForm({ onAdd }, ref) {
         aria-label="Habit name"
         autoComplete="off"
       />
-      <button
-        className="add-btn"
-        type="submit"
-        disabled={!value.trim()}
-        aria-label="Add habit"
-      >
-        <span aria-hidden="true">+</span>
-        <span className="btn-label">Add</span>
-      </button>
+      <div className="add-actions">
+        <button
+          className="add-btn"
+          type="submit"
+          disabled={!value.trim()}
+          aria-label="Add habit"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+        <button
+          type="button"
+          className="browse-btn"
+          onClick={() => inputRef.current?.focus()}
+          aria-label="Browse habits"
+        >
+          Browse
+        </button>
+      </div>
     </form>
   )
 })
