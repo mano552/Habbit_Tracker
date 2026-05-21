@@ -10,6 +10,14 @@ A daily habit tracker with a weekly grid view, streak counters, and full persist
 - Node.js 18+ ([download](https://nodejs.org))
 - npm (comes with Node)
 
+---
+
+## 🔁 Clone the repo
+
+```bash
+git clone https://github.com/mano552/Habbit_Tracker.git
+```
+
 ### Steps (fresh machine)
 
 ```bash
@@ -31,7 +39,8 @@ npm run preview
 ## 🌐 Deployed URL
 https://habit-tracker-streak.netlify.app/
 
----
+
+
 
 ## Features
 - Add, rename, and delete habits

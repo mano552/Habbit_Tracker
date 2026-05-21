@@ -6,6 +6,16 @@
 
 **Requirements:** Node.js 18+ and npm.
 
+---
+
+##  Repo & Commits
+
+Repository: https://github.com/mano552/Habbit_Tracker
+
+This project has multiple commits demonstrating incremental work (not a single dump commit). The full commit history is viewable on the repository page under the "Commits" tab.
+
+---
+
 ```bash
 cd habit-tracker
 npm install
@@ -18,7 +28,7 @@ Open **http://localhost:5173** in your browser.
 
 No environment variables, no backend. All data lives in `localStorage`.
 
----
+
 
 ## 2. Stack & Design Choices
 
