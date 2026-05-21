@@ -70,7 +70,7 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>Built with React · Data stored locally in your browser</p>
+        <p>Built with React · Weekly habits, one week at a time</p>
       </footer>
     </div>
   )

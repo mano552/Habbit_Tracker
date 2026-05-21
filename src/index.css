@@ -3,7 +3,7 @@
 
 /* ─── Design Tokens ──────────────────────────────────── */
 :root {
-  --bg:          #fbf6ec;
+  --bg:          #f3e5cd;
   --surface:     #f6e0b5;
   --surface-2:   #fbf6ec;
   --border:      #d28c09;
@@ -26,7 +26,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; -webkit-font-smoothing: antialiased; }
 body {
-  background: var(--bg);
+  background: radial-gradient(circle at top, #fff7eb 0%, var(--bg) 70%);
   color: var(--text);
   font-family: var(--font-mono);
   min-height: 100vh;
@@ -104,7 +104,7 @@ svg    { display: block; }
   outline: none;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
-.add-input::placeholder { color: var(--text-faint); }
+.add-input::placeholder { color: rgba(114,78,10,0.35); }
 .add-input:focus {
   border-color: var(--accent-dim);
   box-shadow: 0 0 0 3px rgba(219,188,8,0.12);
@@ -113,7 +113,7 @@ svg    { display: block; }
   display: flex;
   align-items: center;
   gap: 7px;
-  background: var(--accent);
+  background: #c48a06;
   color: #ffffff;
   padding: 13px 20px;
   border-radius: var(--radius);
@@ -122,7 +122,7 @@ svg    { display: block; }
   font-family: var(--font-mono);
   transition: background 0.15s, transform 0.1s;
 }
-.add-btn:hover:not(:disabled) { background: #d28c09; }
+.add-btn:hover:not(:disabled) { background: #a66d05; }
 .add-btn:active:not(:disabled) { transform: scale(0.97); }
 .add-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 .add-btn span:first-child { font-size: 20px; line-height: 1; }
